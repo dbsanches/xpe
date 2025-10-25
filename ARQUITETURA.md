@@ -16,7 +16,7 @@ graph TD
     %% Elementos
     sistemaParceiro[Sistema do Parceiro]
 
-    subgraph API de Clientes (Flask App)
+    subgraph API_de_Clientes_Flask_App
         direction TB
         controller(Cliente Controller<br/>[Componente]<br/>Recebe requisições HTTP e orquestra.)
         view(Cliente View<br/>[Componente]<br/>Serializa/Deserializa<br/>Objetos <=> JSON)
@@ -37,4 +37,5 @@ graph TD
     class controller component;
     class view component;
     class model component;
+
     class db database;
